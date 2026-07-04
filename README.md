@@ -62,7 +62,13 @@ This project is an ETL (Extract, Transform, Load) pipeline that extracts tweets 
     aws:
       s3_bucket: "your_s3_bucket_name"  # Name of the S3 bucket
       s3_path: "your_s3_path"  # Path in the S3 bucket where data will be stored
+
+    xquik:
+      export_path: ""  # Optional local Xquik JSON, JSONL, or CSV export path
     ```
+
+    You can also set `XQUIK_EXPORT_PATH` in the environment. Leave both values
+    empty to keep using the Tweepy API extraction flow.
 
 ## Execution
 
